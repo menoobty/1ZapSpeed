@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import Preloader from "./components/Preloader/Preloader";
+import LogoImage from "./components/Logo/LogoImage";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="container">
+        <LogoImage />
+        <h1>
+          TEAM ZAPSPEED
+          <br />
+          <br />
+          <br />
+        </h1>
+        <h2>
+          Launching Soon
+          <br />
+          Stay Tuned
+        </h2>
+        <Preloader />
+        <p>An initiative by</p>
+        <p>Shajin Mohamed</p>
+        <p>shajinmohamed@hotmail.com</p>
+        <p>+91-7034355888</p>
+      </div>
     </div>
   );
 }
